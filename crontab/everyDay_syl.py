@@ -1,3 +1,4 @@
+#此文件功能：下载daban_zd表里中小盘股票的‘算法上的’收益率
 import baostock as bs
 import datetime
 import pymysql

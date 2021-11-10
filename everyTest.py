@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# 主要用来放算法的地方
 import baostock as bs
 import datetime
 import pymysql
@@ -209,9 +209,6 @@ def syl_ruku():
     get_K.bs_close()
     db.close()
 # syl_ruku()
-
-
-
 
 def suanfa1():
     db = pymysql.connect("47.111.24.112", "root", "withme_321", "test")
@@ -424,9 +421,7 @@ def suanfa1():
             print(money, sum, code, day, buy_price, sell_price)
     db.close()
 suanfa1()
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          # 概念里，交易量最大的开盘跌了买，然后其他开盘跌的买（可以根据跌的幅度或者交易量），最后就是交易量最大的-1.5%
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        # 概念里，交易量最大的开盘跌了买，然后其他开盘跌的买（可以根据跌的幅度或者交易量），最后就是交易量最大的-1.5%
 def jjj():
     # workbook = openpyxl.load_workbook('C:\\Users\Administrator\Desktop\\aaa.xlsx')
     # sheet = workbook['Sheet1']

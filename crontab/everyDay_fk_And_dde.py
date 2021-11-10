@@ -1,5 +1,5 @@
+#此文件的功能：下载当日风口以及当日和前一日的daban_zd里中小盘股票的主力资金流入流出
 import pymysql
-import datetime
 import baostock as bs
 from selenium import webdriver
 
@@ -141,40 +141,3 @@ def data_analysis_youzi():
     driver.close()
     driver.quit()
 data_analysis_youzi()
-#把历史的dde百分比
-def data_dde_per():
-
-    db = pymysql.connect("47.111.24.112", "root", "withme_321", "test")
-    cursor = db.cursor()
-    sql_code="SELECT  date,code from daban_zd   where date>'2021-05-25' and code like '00%' and updown >0 "
-    cursor.execute(sql_code)
-    code_list = cursor.fetchall()
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    driver = webdriver.Chrome(options=options)
-    try:
-        for code_day in code_list:
-            day=code_day[0]
-            code=code_day[1]
-            driver.get('https://data.eastmoney.com/zjlx/%s.html' % code)
-            # if code=='000876':continue
-            print(code,day)
-            for num in range(2,102):
-                # table_ls > table > tbody > tr:nth-child(2) > td:nth-child(1)
-                try:
-                    if str(day)==driver.find_element_by_css_selector('#table_ls > table > tbody > tr:nth-child(%s) > td:nth-child(1)'%num).text:
-                        dde_look_per=driver.find_element_by_css_selector('#table_ls > table > tbody > tr:nth-child(%s) > td:nth-child(5) > span'%num).text
-                        dde_buy_per=driver.find_element_by_css_selector('#table_ls > table > tbody > tr:nth-child(%s) > td:nth-child(5) > span'%(num-1)).text
-                        dde_look_per=dde_look_per.replace('%','')
-                        dde_buy_per=dde_buy_per.replace('%','')
-                    else:continue
-                except:continue
-            sql2 = "UPDATE  daban_zd set dde_lookday_per='%s', dde_buyday_per='%s' WHERE code='%s'and date='%s' " % (dde_look_per,dde_buy_per,code,day)
-            # print(sql2)
-            cursor.execute(sql2)
-            db.commit()
-    finally:
-        db.close()
-        driver.close()
-        driver.quit()
-# data_dde_per()

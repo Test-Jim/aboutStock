@@ -1,9 +1,7 @@
-from bs4 import BeautifulSoup
+#此文件功能：下载每天涨停/跌停的股票到daban_zd表内
 import requests
-import re
 import pymysql
 import datetime
-import baostock as bs
 s=requests.session()
 #下载每天涨停、跌停的股票数据
 def download_days_zhangdie():

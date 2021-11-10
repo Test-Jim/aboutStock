@@ -1,0 +1,129 @@
+<div class="FYB_RD">
+    <span class="c-color-t">{{buy}}</span>
+    <div><span class="c-color-t">{{daban}}</span></div>
+    <div class="cr-title c-gap-bottom-xsmall" title="热点">
+        <span class="c-color-t">【热点】</span>
+    </div>
+</div>
+<table class="c-table opr-toplist1-table">
+{% for key, V in end_dict.items() %}
+<tr class="toplist1-tr">                          
+	<td class="toplist1-td opr-toplist1-link">
+        <span class="toplist1-hot c-index-single  toplist1-hot-top toplist1-hot-0 c-index-single-hot1 " style="opacity:1;">{{key}}:{{V[0]}}</span>
+        <a target="_blank" href={{V[2]}} class="c-font-medium c-color-t opr-toplist1-subtitle ">{{V[1]}}</a>
+	</td>
+</tr>
+    {% endfor %}
+</table>
+    <span class="c-color-t">【业绩预告】</span>
+<table class="c-table opr-toplist1-table">
+{% for key, V in yjygdic.items() %}
+<tr class="toplist1-tr">
+	<td class="toplist1-td opr-toplist1-link">
+        <span>时间：{{V[3]}}</span>
+        <span class="toplist1-hot c-index-single  toplist1-hot-top toplist1-hot-0 c-index-single-hot1 " style="opacity:1;">{{key}}:{{V[0]}}</span>
+        <a target="_blank" class="c-font-medium c-color-t opr-toplist1-subtitle ">净利润变动幅度：{{V[1]}}  ||上年同期净利：{{V[2]}}</a>
+	</td>
+</tr>
+    {% endfor %}
+</table>
+
+    <span class="c-color-t">【快报】</span>
+<table class="c-table opr-toplist1-table">
+{% for key, V in yjkbdic.items() %}
+<tr class="toplist1-tr">
+	<td class="toplist1-td opr-toplist1-link">
+        <span>时间：{{V[1]}}</span>
+        <span class="toplist1-hot c-index-single  toplist1-hot-top toplist1-hot-0 c-index-single-hot1 " style="opacity:1;">{{key}}:{{V[0]}}</span>
+        <a target="_blank" class="c-font-medium c-color-t opr-toplist1-subtitle ">同比营收：{{V[2]}}　||同比净利：{{V[3]}}　||净资产收益率{{V[4]}}</a>
+	</td>
+</tr>
+    {% endfor %}
+</table>
+
+    <span class="c-color-t">【季度/年公告】</span>
+<table class="c-table opr-toplist1-table">
+{% for key, V in yjggdic.items() %}
+<tr class="toplist1-tr">
+	<td class="toplist1-td opr-toplist1-link">
+        <span>时间：{{V[1]}}</span>
+        <span class="toplist1-hot c-index-single  toplist1-hot-top toplist1-hot-0 c-index-single-hot1 " style="opacity:1;">{{key}}:{{V[0]}}</span>
+        <a target="_blank" class="c-font-medium c-color-t opr-toplist1-subtitle ">同比营收：{{V[2]}}　||营收季度环比：{{V[3]}}<br/>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp; ||净利同比：{{V[4]}}　||净利季度环比:{{V[5]}}<br/>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;||净资产收益率:{{V[6]}}  |销售毛利率:{{V[7]}}</a>
+	</td>
+</tr>
+    {% endfor %}
+</table>
+
+
+<span class="c-color-t">【北上资金前十买入情况】</span>
+<table border="1">
+    <td colspan="4">时间：{{bszj_buy[41][0]}}——{{bszj_buy[0][0]}} 5个交易日</td>
+    <tr>
+        {% for index in range(0,5)%}
+    <th>股票名字</th>
+    <th>买入股数</th>
+    <th>当天幅度</th>
+        {% endfor %}
+    </tr>
+{% for index in range(0,10) %}
+    <tr>
+    <td>{{bszj_buy[index+40][1]}}</td>
+    <td>{{bszj_buy[index+40][2]}}</td>
+    <td>{{bszj_buy[index+40][3]}}</td>
+            <td>{{bszj_buy[index+30][1]}}</td>
+    <td>{{bszj_buy[index+30][2]}}</td>
+    <td>{{bszj_buy[index+30][3]}}</td>
+            <td>{{bszj_buy[index+20][1]}}</td>
+    <td>{{bszj_buy[index+20][2]}}</td>
+    <td>{{bszj_buy[index+20][3]}}</td>
+            <td>{{bszj_buy[index+10][1]}}</td>
+    <td>{{bszj_buy[index+10][2]}}</td>
+    <td>{{bszj_buy[index+10][3]}}</td>
+            <td>{{bszj_buy[index][1]}}</td>
+    <td>{{bszj_buy[index][2]}}</td>
+    <td>{{bszj_buy[index][3]}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+
+
+
+
+
+
+
+<span class="c-color-t">【北上资金前十卖出情况】</span>
+<table border="1">
+    <td colspan="4">时间：{{bszj_sell[41][0]}}——{{bszj_sell[0][0]}} 5个交易日</td>
+
+    <tr>
+        {% for index in range(0,5)%}
+    <th>股票名字</th>
+    <th>卖出股数</th>
+    <th>当天幅度</th>
+        {% endfor %}
+    </tr>
+{% for index in range(0,10) %}
+    <tr>
+    <td>{{bszj_sell[index+40][1]}}</td>
+    <td>{{bszj_sell[index+40][2]}}</td>
+    <td>{{bszj_sell[index+40][3]}}</td>
+            <td>{{bszj_sell[index+30][1]}}</td>
+    <td>{{bszj_sell[index+30][2]}}</td>
+    <td>{{bszj_sell[index+30][3]}}</td>
+            <td>{{bszj_sell[index+20][1]}}</td>
+    <td>{{bszj_sell[index+20][2]}}</td>
+    <td>{{bszj_sell[index+20][3]}}</td>
+            <td>{{bszj_sell[index+10][1]}}</td>
+    <td>{{bszj_sell[index+10][2]}}</td>
+    <td>{{bszj_sell[index+10][3]}}</td>
+            <td>{{bszj_sell[index][1]}}</td>
+    <td>{{bszj_sell[index][2]}}</td>
+    <td>{{bszj_sell[index][3]}}</td>
+    </tr>
+{% endfor %}
+
+</table>
+
+

@@ -1,3 +1,4 @@
+#此文件功能：更新每日daban_zd的中小盘股票的模型
 import pymysql
 import datetime
 import baostock as bs
@@ -186,23 +187,4 @@ def moxing(one,two,three,four):
     # if max(x[0],y[0])>min(x[1],y[1]) and y[0]>x[1] and max(y[0],z[0])>min(y[1],z[1]) and y[0]>z[1]:return ('波动')
 data_analysis_youzi_today_ruku()
 
-# def one_year_zdNum():
-#     db = pymysql.connect("47.111.24.112", "root", "withme_321", "test")
-#     cursor = db.cursor()
-#     get_K = get_Kline()
-#     day_code="select date,code from daban_zd where model is not null"
-#     cursor.execute(day_code)
-#     stock_list = cursor.fetchall()
-#     for stock in stock_list:
-#         day=stock[0]
-#         code=stock[1]
-#         data_list = get_K.getKline(str(day+ datetime.timedelta(-365)), str(day), code)
-#         banshu = 1
-#         for data in data_list:
-#             if float(data[10])>9.4:banshu+=1
-#         updatesql="UPDATE daban_zd set zt_num='%s' WHERE code='%s' and date='%s'"%(banshu,code,day)
-#         cursor.execute(updatesql)
-#         db.commit()
-#     cursor.close()
-#     get_K.bs_close()
-# one_year_zdNum()
+

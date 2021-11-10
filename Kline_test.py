@@ -1,3 +1,4 @@
+#画K线的测试脚本
 import pyecharts.options as opts
 from pyecharts.charts import Kline,Line
 import baostock as bs

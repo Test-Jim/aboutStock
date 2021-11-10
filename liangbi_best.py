@@ -1,3 +1,4 @@
+#通过量比这个属性去分析股票，实际上效果不好
 import pymysql
 import datetime
 import baostock as bs

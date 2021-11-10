@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25de81b3-4fb6-4ab8-85de-fb8e52c3da6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crontab/everyDay_beishang.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crontab/everyDay_lhb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day_kline_5fen.py" beforeDir="false" afterPath="$PROJECT_DIR$/kline_5fen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day_kline_now.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kline_now.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day_line_syl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kline_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kline_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/aa.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crontab/everyTest_syl.py" beforeDir="false" afterPath="$PROJECT_DIR$/crontab/everyDay_syl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crontab/get_best_daban_moxing_fengkou.py" beforeDir="false" afterPath="$PROJECT_DIR$/crontab/everyDay_fk_And_dde.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crontab/get_best_daban_moxing_ruku.py" beforeDir="false" afterPath="$PROJECT_DIR$/crontab/everyDay_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crontab/get_best_yz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crontab/gupiao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crontab/gupiao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/crontab/everyDay_lhb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crontab/gupiao_zd.py" beforeDir="false" afterPath="$PROJECT_DIR$/crontab/everyDay_zd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/everyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/everyTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_best_bs3_gaizao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_best_bs3_gaizao2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gp相关.xls" beforeDir="false" afterPath="$PROJECT_DIR$/gp相关.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liangbi_best.py" beforeDir="false" afterPath="$PROJECT_DIR$/liangbi_best.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/everyTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
+              <folding>
+                <element signature="e#13#34#0" expanded="true" />
+                <element signature="e#82#94#0" />
+                <element signature="e#3644#5256#0" />
+                <element signature="e#5258#5279#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aboutFlask/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1247">
+              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding>
+                <element signature="e#11#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aboutFlask/gupiao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#124#804#0" />
+                <element signature="e#821#1478#0" />
+                <element signature="e#1496#2240#0" />
+                <element signature="e#4965#5403#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aboutFlask/get_best_bs3_gaizao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-11">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#91#1703#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>download_data_first</find>
+      <find>selectBS</find>
+      <find>t_stock</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/crontab/everyTest_syl.py" />
+        <option value="$PROJECT_DIR$/crontab/get_best_daban_moxing_fengkou.py" />
+        <option value="$PROJECT_DIR$/crontab/everyDay_fk_And_dde.py" />
+        <option value="$PROJECT_DIR$/crontab/get_best_daban_moxing_ruku.py" />
+        <option value="$PROJECT_DIR$/crontab/gupiao.py" />
+        <option value="$PROJECT_DIR$/crontab/everyDay_beishang.py" />
+        <option value="$PROJECT_DIR$/crontab/gupiao2.py" />
+        <option value="$PROJECT_DIR$/crontab/gupiao_zd.py" />
+        <option value="$PROJECT_DIR$/crontab/get_best_yz.py" />
+        <option value="$PROJECT_DIR$/kline_5fen.py" />
+        <option value="$PROJECT_DIR$/Kline_test.py" />
+        <option value="$PROJECT_DIR$/liangbi_best.py" />
+        <option value="$PROJECT_DIR$/everyTest.py" />
+        <option value="$PROJECT_DIR$/Kline_now.py" />
+        <option value="$PROJECT_DIR$/get_best_bs3_gaizao2.py" />
+        <option value="$PROJECT_DIR$/aboutFlask/get_best_bs3_gaizao.py" />
+        <option value="$PROJECT_DIR$/aboutFlask/gupiao.py" />
+        <option value="$PROJECT_DIR$/aboutFlask/test.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/aboutStock.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1040" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="aboutStock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aboutStock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aboutStock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aboutStock" type="462c0819:PsiDirectoryNode" />
+              <item name="aboutFlask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aboutStock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aboutStock" type="462c0819:PsiDirectoryNode" />
+              <item name="crontab" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25de81b3-4fb6-4ab8-85de-fb8e52c3da6c" name="Default Changelist" comment="" />
+      <created>1636454044666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636454044666</updated>
+      <workItem from="1636454045927" duration="997000" />
+      <workItem from="1636507106913" duration="6979000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7976000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/crontab/everyDay_beishang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+            <element signature="e#3177#4943#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crontab/everyDay_fk_And_dde.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#114#1726#0" />
+            <element signature="e#1752#2890#0" />
+            <element signature="e#2950#6811#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crontab/everyDay_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="15" />
+          <folding>
+            <element signature="e#83#1695#0" />
+            <element signature="e#1757#4554#0" />
+            <element signature="e#4599#6368#0" />
+            <element signature="e#6405#9509#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crontab/everyDay_syl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#82#1694#0" />
+            <element signature="e#1716#3104#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crontab/everyDay_zd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding>
+            <element signature="e#180#3042#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crontab/everyDay_lhb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+            <element signature="e#166#1021#0" />
+            <element signature="e#1068#2658#0" />
+            <element signature="e#2685#5540#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crontab/everyDay_lhb2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#44#1656#0" />
+            <element signature="e#1069#1980#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kline_5fen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kline_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liangbi_best.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#108#1720#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liangbi_download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liangbi_K_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#195#1807#0" />
+            <element signature="e#1848#7610#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day_line_syl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#195#1807#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kline_now.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="143" column="35" selection-start-line="143" selection-start-column="31" selection-end-line="143" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_best_bs3_gaizao2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#132#1744#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_best_daban_moxing_liangneng.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutFlask/API_Test.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="225">
+          <caret line="9" column="23" lean-forward="true" selection-end-line="3141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
+          <folding>
+            <element signature="e#13#34#0" expanded="true" />
+            <element signature="e#82#94#0" />
+            <element signature="e#3644#5256#0" />
+            <element signature="e#5258#5279#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutFlask/get_best_daban.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#82#1694#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutFlask/Day_kline_now.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#195#1807#0" />
+            <element signature="e#1839#6234#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutFlask/gupiao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#124#804#0" />
+            <element signature="e#821#1478#0" />
+            <element signature="e#1496#2240#0" />
+            <element signature="e#4965#5403#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutFlask/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1247">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#11#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboutFlask/get_best_bs3_gaizao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#91#1703#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

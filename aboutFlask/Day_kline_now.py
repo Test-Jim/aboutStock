@@ -42,28 +42,25 @@ class get_Kline(object):
     def bs_close(self):
         bs.logout()
 
-def create_Kline_Image(day1,day2):
+def create_Kline_Image():
     Pa = Page()
     # Gd=Grid(init_opts=opts.InitOpts(width="700px",height='700px'))
     db = pymysql.connect("47.111.24.112", "root", "withme_321", "test")
     cursor = db.cursor()
     get_K = get_Kline()
-    day_code = "SELECT DISTINCT date from daban_zd where date>='%s' and date<='%s' ORDER BY date" % (day1, day2)
-    cursor.execute(day_code)
+    day_sql="SELECT DISTINCT date from daban_zd  ORDER BY date DESC limit 1"
+    cursor.execute(day_sql)
     day_list = cursor.fetchall()
     for day in day_list:
-        sql_code = "SELECT date,code,stockname,price,highdays FROM daban_zd where updown>0 and code like'00%%' and date='%s' ORDER BY turn desc limit 2" % \
+        sql_code = "SELECT date,code,stockname,price FROM daban_zd where updown>0 and code like'00%%' and date='%s' ORDER BY turn desc limit 3" % \
                    day[0]
         cursor.execute(sql_code)
         code_list = cursor.fetchall()
-        code_list=list(code_list)
-        del code_list[0]
         for stock in code_list:
             code = stock[1]
             name = stock[2]
-            highdays=stock[4]
             # trade_day=stock[0]
-            # if str(trade_day) not in ['2019-01-28','2019-02-14','2019-06-27','2019-08-19','2019-08-23','2019-09-05','2019-10-15','2019-10-28','2019-11-04','2020-02-03','2020-02-07','2020-02-10','2020-06-02','2021-07-01']:continue
+            # if str(trade_day) not in ['2020-02-14','2020-02-17','2020-02-27','2020-03-03','2020-03-09','2020-04-03','2020-04-17','2020-04-22','2020-05-14','2020-05-27','2020-06-05','2020-06-11','2020-06-29','2020-07-20','2020-07-29','2020-07-30','2020-08-03','2020-08-06','2020-08-07','2020-09-18','2020-11-13','2020-11-16','2020-12-16','2020-12-24','2021-01-12','2021-02-26','2021-03-15','2021-04-28','2021-04-30','2021-05-13','2021-05-26','2021-05-27']:continue
             data_list1 = get_K.getKline(str(day[0]+datetime.timedelta(-15)),str(day[0]), code)
             data_list2=get_K.getKline(str(day[0]),str(day[0]+datetime.timedelta(15)), code)
             # print(stock)
@@ -101,39 +98,11 @@ def create_Kline_Image(day1,day2):
             high2=float('%.2f' % float(data_list2[0][3]))
             low2=float('%.2f' % float(data_list2[0][4]))
             close2=float('%.2f' % float(data_list2[0][5]))
-            day3=data_list2[1][0]
-            open3=float('%.2f' % float(data_list2[1][2]))
-            high3=float('%.2f' % float(data_list2[1][3]))
-            low3=float('%.2f' % float(data_list2[1][4]))
-            close3=float('%.2f' % float(data_list2[1][5]))
-            day4=data_list2[2][0]
-            open4=float('%.2f' % float(data_list2[2][2]))
-            high4=float('%.2f' % float(data_list2[2][3]))
-            low4=float('%.2f' % float(data_list2[2][4]))
-            close4=float('%.2f' % float(data_list2[2][5]))
-            data=[[open00,close00,low00,high00],[open0,close0,low0,high0],[open1,close1,low1,high1],[open2,close2,low2,high2],[open3,close3,low3,high3],[open4,close4,low4,high4]]
+
+            data=[[open00,close00,low00,high00],[open0,close0,low0,high0],[open1,close1,low1,high1],[open2,close2,low2,high2]]
             # data=[close00,close0,close1,close2,close3,close4]
-            daylist=[day00,day0,day1,day2,day3,day4]
+            daylist=[day00,day0,day1,day2]
 
-            if float(data_list2[1][2]) < float(data_list2[1][6]):
-                buy_price = float(data_list2[1][2])
-            elif float(data_list2[1][4]) <= float(data_list2[1][6]) < float(data_list2[1][3]):  # 今日最低<上一日收盘价<今日最高
-                buy_price = float(data_list2[1][6])  # 买价，T日开盘价
-            else:
-                break
-            sell_day=data_list2[2][0]
-            # if float(data_list2[2][3]) > float(data_list2[2][6]) * 1.095:sell_price = float(data_list2[2][3])
-            # else:sell_price = float(data_list2[2][5])  # 挂涨停价，没卖掉就收盘价卖
-            data_list3 = get_K.testgetKline(sell_day, sell_day, code, '5')
-            if data_list3 == []: continue
-            sell_price = float(data_list3[29][3])  # 13点25分开盘价作为卖价
-
-            buy_close=float(data_list2[1][5])#买那天的收盘价
-            if buy_price>buy_close:string1='先跌'
-            else:string1='先涨'
-            if buy_close>sell_price:string2='再跌'
-            else:string2='再涨'
-            syl="%.2f%% "%((sell_price-buy_price)/buy_price*100)#收益率
 
             c=(
                     # Line(init_opts=opts.InitOpts(width="500px",height='500px'))
@@ -157,11 +126,14 @@ def create_Kline_Image(day1,day2):
                                 is_show=True, areastyle_opts=opts.AreaStyleOpts(opacity=0.5)
                             ),
                         ),
-                        title_opts=opts.TitleOpts(title=str(syl)+(string1+string2)+highdays),
+                        title_opts=opts.TitleOpts(title=data_list2[0][9][0:5]+'遵守纪律'),
                     )
             )
             Pa.add(c)
-    Pa.render('ccc.html')
+    Pa.render('templates/threeImage.html')
     cursor.close()
     get_K.bs_close()
-create_Kline_Image('2021-07-27','2021-08-09')
+
+
+
+

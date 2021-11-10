@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+#此文件功能：下载每天龙虎榜数据到daban表内
 import requests
 import re
 import pymysql
@@ -124,6 +124,4 @@ def daban():
             continue
     get_K.bs_close()
     db.close()
-#下载游资每天数据
-
 daban()

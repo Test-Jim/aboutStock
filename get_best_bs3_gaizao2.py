@@ -1,6 +1,45 @@
-from gupiao import *
+#北上资金的算法，一年大概有20%以上
+import baostock as bs
+import datetime
+import pymysql
 import warnings
 warnings.filterwarnings("ignore")
+class get_Kline(object):
+    def __init__(self):
+        self.lg = bs.login()
+    def getKline(self,beginDate,endDate,code):
+        if code[0] == '0':code = "sz." + code
+        if code[0] == '6':code = 'sh.' + code
+        if code[0] == '3':code = 'sz.' + code
+        if code[0] == '2':code = 'sz.' + code
+        if code[0] == '9':code = 'sh.' + code
+        rs = bs.query_history_k_data_plus(code,
+                                          "date,code,open,high,low,close,preclose,volume,amount,turn,pctChg",
+                                          start_date=beginDate, end_date=endDate,
+                                          frequency="d", adjustflag="2")
+        data_list = []
+        while (rs.error_code == '0') & rs.next():
+            data_list.append(rs.get_row_data())
+        # print(data_list)
+        return data_list
+
+    def testgetKline(self,beginDate, endDate, code,k):
+        if code[0] == '0':code = "sz." + code
+        if code[0] == '6':code = 'sh.' + code
+        if code[0] == '3':code = 'sz.' + code
+        if code[0] == '2':code = 'sz.' + code
+        if code[0] == '9':code = 'sh.' + code
+        rs = bs.query_history_k_data_plus(code,
+                                          "date,time,code,open,high,low,close,volume,amount",
+                                          start_date=beginDate, end_date=endDate,
+                                          frequency=k, adjustflag="2")
+        data_list = []
+        while (rs.error_code == '0') & rs.next():
+            # 获取一条记录，将记录合并在一起
+            data_list.append(rs.get_row_data())
+        return data_list
+    def bs_close(self):
+        bs.logout()
 #T日，买价，T-1日收盘价*0.99，买不进就不操作。卖价：T+1日，2点56接近收盘价
 def get_best_choice(begin_day,end_day):
     get_K = get_Kline()
