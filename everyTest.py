@@ -1,4 +1,5 @@
-# ä¸»è¦ç”¨æ¥æ”¾ç®—æ³•çš„åœ°æ–¹
+# coding=gbk
+# Ö÷ÒªÓÃÀ´·ÅËã·¨µÄµØ·½
 import baostock as bs
 import datetime
 import pymysql
@@ -112,13 +113,13 @@ class get_Kline(object):
                                           frequency=k, adjustflag="2")
         data_list = []
         while (rs.error_code == '0') & rs.next():
-            # è·å–ä¸€æ¡è®°å½•ï¼Œå°†è®°å½•åˆå¹¶åœ¨ä¸€èµ·
+            # »ñÈ¡Ò»Ìõ¼ÇÂ¼£¬½«¼ÇÂ¼ºÏ²¢ÔÚÒ»Æğ
             data_list.append(rs.get_row_data())
         return data_list
     def bs_close(self):
         bs.logout()
 
-# def ddd():#ä¸‹è½½æ‰€æœ‰è‚¡ç¥¨ä»£ç 
+# def ddd():#ÏÂÔØËùÓĞ¹ÉÆ±´úÂë
 #     import requests,time,json
 #     db = pymysql.connect("47.111.24.112", "root", "withme_321", "test")
 #     cursor = db.cursor()
@@ -134,7 +135,7 @@ class get_Kline(object):
 #     db.commit()
 #     db.close()
 # ddd()
-#ä¸‹è½½å†å²æ·±å¸‚ä¸­å°æ¿æ¯æ—¥æ¶¨åœè‚¡
+#ÏÂÔØÀúÊ·ÉîÊĞÖĞĞ¡°åÃ¿ÈÕÕÇÍ£¹É
 # def eee():
 #     get_K=get_Kline()
 #     db = pymysql.connect("47.111.24.112", "root", "withme_321", "test")
@@ -150,7 +151,7 @@ class get_Kline(object):
 #             code = stock[0]
 #             name = stock[1]
 #             if 'ST' in name:continue
-#             if 'é€€' in name:continue
+#             if 'ÍË' in name:continue
 #             data_list=get_K.getKline(oldday,oldday,code)
 #             # print(data_list)
 #             if data_list==[]:continue
@@ -182,7 +183,7 @@ def syl_ruku():
     sql0="SELECT DISTINCT date FROM daban_zd  ORDER BY date desc limit 3"
     cursor.execute(sql0)
     day_list = cursor.fetchall()
-    sql1="SELECT date,code from daban_zd WHERE updown >0 and code like'00%%' and date='%s'"%str(day_list[2][0])
+    sql1="SELECT date,code from daban_zd WHERE updown >0 and code like'00%%' and date='%s'"%str('2021-11-08')
     cursor.execute(sql1)
     end_list = cursor.fetchall()
     for index in end_list:
@@ -190,17 +191,18 @@ def syl_ruku():
         day=index[0]
         data_list = get_K.getKline(str(day), str(day + datetime.timedelta(15)), code)
         # print(data_list)
-        sell_day = data_list[2][0]  # å–çš„æ—¥æœŸ
+        sell_day = data_list[2][0]  # ÂôµÄÈÕÆÚ
 
         data_list3 = get_K.testgetKline(sell_day, sell_day, code, '5')
-        sell_price=float(data_list3[29][3])
         if data_list3 == []: continue
+        sell_price=float(data_list3[29][3])
+
         if float(data_list[1][2]) < float(data_list[1][6]):
             buy_price = float(data_list[1][2])
-        elif float(data_list[1][4]) <= float(data_list[1][6]) < float(data_list[1][3]):  # ä»Šæ—¥æœ€ä½<ä¸Šä¸€æ—¥æ”¶ç›˜ä»·<ä»Šæ—¥æœ€é«˜
-            buy_price = float(data_list[1][6])  # ä¹°ä»·ï¼ŒTæ—¥å¼€ç›˜ä»·
-        else:continue  # æ‰¾ä¸åˆ°ä¹°ä»·å°±é€€å‡ºå¾ªç¯
-        syl = "%.2f%% " % ((sell_price - buy_price) / buy_price * 100)  # æ”¶ç›Šç‡
+        elif float(data_list[1][4]) <= float(data_list[1][6]) < float(data_list[1][3]):  # ½ñÈÕ×îµÍ<ÉÏÒ»ÈÕÊÕÅÌ¼Û<½ñÈÕ×î¸ß
+            buy_price = float(data_list[1][6])  # Âò¼Û£¬TÈÕ¿ªÅÌ¼Û
+        else:continue  # ÕÒ²»µ½Âò¼Û¾ÍÍË³öÑ­»·
+        syl = "%.2f%% " % ((sell_price - buy_price) / buy_price * 100)  # ÊÕÒæÂÊ
         print(syl,code,day)
         sql2="update daban_zd set syl='%s' where date='%s'and code='%s'"%(syl,day,code)
         cursor.execute(sql2)
@@ -354,6 +356,7 @@ def suanfa1():
 '11/02/2021':'000982',
 '11/03/2021': '002335',
 '11/04/2021': '002202',
+'11/05/2021': '002055',
           }
     data1={}
     money=50000
@@ -373,8 +376,8 @@ def suanfa1():
             dde_lookday=index[2]
             dde_buyday=index[3]
             data_list = get_K.getKline(str(day), str(day + datetime.timedelta(15)), code)
-            sell_day = data_list[2][0]  # å–çš„æ—¥æœŸ
-            # 5åˆ†é’Ÿä¸ºå•ä½çš„Kçº¿
+            sell_day = data_list[2][0]  # ÂôµÄÈÕÆÚ
+            # 5·ÖÖÓÎªµ¥Î»µÄKÏß
             data_list3 = get_K.testgetKline(sell_day, sell_day, code, '5')
             if data_list3 == []: continue
             high_price,low_price,buy_price,sell_price = [],[],0,0
@@ -388,10 +391,10 @@ def suanfa1():
             if float(data_list[1][2]) < float(data_list[1][6]):
                 # float(data_list[1][2])*0.992>float(data_list[1][4]):
                 buy_price = float(data_list[1][2])
-            elif float(data_list[1][4]) <= float(data_list[1][6])*0.984 < float(data_list[1][3]):  # ä»Šæ—¥æœ€ä½<ä¸Šä¸€æ—¥æ”¶ç›˜ä»·<ä»Šæ—¥æœ€é«˜
-                buy_price = float(data_list[1][6])*0.984  # ä¹°ä»·ï¼ŒTæ—¥å¼€ç›˜ä»·
-            else:break  # æ‰¾ä¸åˆ°ä¹°ä»·å°±è¿›è¡Œä¸‹ä¸€æ¬¡å¾ªç¯
-            #åœ¨[29][3]ä¹‹å‰æ‰¾å‡ºæ˜¯å¦æ¶¨åœ
+            elif float(data_list[1][4]) <= float(data_list[1][6])*0.984 < float(data_list[1][3]):  # ½ñÈÕ×îµÍ<ÉÏÒ»ÈÕÊÕÅÌ¼Û<½ñÈÕ×î¸ß
+                buy_price = float(data_list[1][6])*0.984  # Âò¼Û£¬TÈÕ¿ªÅÌ¼Û
+            else:break  # ÕÒ²»µ½Âò¼Û¾Í½øĞĞÏÂÒ»´ÎÑ­»·
+            #ÔÚ[29][3]Ö®Ç°ÕÒ³öÊÇ·ñÕÇÍ£
             highest_price,lowest_price=max(high_price),min(low_price)
             syl=(highest_price-float(data_list[1][5]))/float(data_list[1][5])
 
@@ -399,33 +402,30 @@ def suanfa1():
             # if syl>=0.0992:
             #     sell_price=highest_price
             # elif float(dde_buyday)<0 and  0.8<x<1:
-            # # !!!!æ»¡è¶³ddeæ¡ä»¶åï¼Œå–æ—¥float(data_list3[3][3])æ˜¯ç»¿è‰²çš„ï¼Œåˆ™float(data_list3[3][3])ä»·æ ¼å–ï¼Œä¸æ˜¯åˆ™ä½¿ç”¨ä¸Š/ä¸‹ä¸¤ä¸ªå–ä»·
+            # # !!!!Âú×ãddeÌõ¼şºó£¬ÂôÈÕfloat(data_list3[3][3])ÊÇÂÌÉ«µÄ£¬Ôòfloat(data_list3[3][3])¼Û¸ñÂô£¬²»ÊÇÔòÊ¹ÓÃÉÏ/ÏÂÁ½¸öÂô¼Û
             #     sell_price=float(data_list3[3][3])
-            #     syl2 = "%.2f%% " % ((sell_price - buy_price) / buy_price * 100)  # æ”¶ç›Šç‡
+            #     syl2 = "%.2f%% " % ((sell_price - buy_price) / buy_price * 100)  # ÊÕÒæÂÊ
             # else:sell_price=float(data_list3[29][3])
 
-            #å¦‚æœäºæŸ5ä¸ªç‚¹ï¼Œåˆ™ç«‹é©¬å–ã€‚
-
+            #Èç¹û¿÷Ëğ5¸öµã£¬ÔòÁ¢ÂíÂô¡£
             syl0=(float(data_list[1][5]) - buy_price) / buy_price
             # print(syl0)
             if syl>=0.0992:
                 sell_price=highest_price
             elif syl0<0 and (float(data_list3[4][3])-buy_price)/buy_price<-0.04:
-                sell_price=float(data_list3[5][3])#ç®—ä¸‹è‚¡ç¥¨æ˜¯å¦å’Œä¸Šé¢æ¡ä»¶æœ‰å†²çª
-
+                sell_price=float(data_list3[5][3])#ËãÏÂ¹ÉÆ±ÊÇ·ñºÍÉÏÃæÌõ¼şÓĞ³åÍ»
             else:
                 sell_price=float(data_list3[47][3])
-
             money = money * (1 + (sell_price - buy_price) / buy_price) * 0.9985
             sum += 1
             print(money, sum, code, day, buy_price, sell_price)
     db.close()
-suanfa1()
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        # æ¦‚å¿µé‡Œï¼Œäº¤æ˜“é‡æœ€å¤§çš„å¼€ç›˜è·Œäº†ä¹°ï¼Œç„¶åå…¶ä»–å¼€ç›˜è·Œçš„ä¹°ï¼ˆå¯ä»¥æ ¹æ®è·Œçš„å¹…åº¦æˆ–è€…äº¤æ˜“é‡ï¼‰ï¼Œæœ€åå°±æ˜¯äº¤æ˜“é‡æœ€å¤§çš„-1.5%
+# suanfa1()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        # ¸ÅÄîÀï£¬½»Ò×Á¿×î´óµÄ¿ªÅÌµøÁËÂò£¬È»ºóÆäËû¿ªÅÌµøµÄÂò£¨¿ÉÒÔ¸ù¾İµøµÄ·ù¶È»òÕß½»Ò×Á¿£©£¬×îºó¾ÍÊÇ½»Ò×Á¿×î´óµÄ-1.5%
 def jjj():
     # workbook = openpyxl.load_workbook('C:\\Users\Administrator\Desktop\\aaa.xlsx')
     # sheet = workbook['Sheet1']
-    # # è¯»å–æŒ‡å®šçš„å•å…ƒæ ¼æ•°æ®
+    # # ¶ÁÈ¡Ö¸¶¨µÄµ¥Ôª¸ñÊı¾İ
     # riqi='2021-9-15'
     # data_dic,data_list,data_list1={},[],[]
     # for index in range(1,60):
@@ -447,7 +447,7 @@ def jjj():
     #         data_list=[]
     #         v = [cell2, cell3,cell4]
     #         data_list.append(v)
-    #     #æœ€åä¸€å¤©ä¸´æ—¶ç”¨è¿™ä¸ªæ–¹æ³•ç»Ÿè®¡è¿›å»
+    #     #×îºóÒ»ÌìÁÙÊ±ÓÃÕâ¸ö·½·¨Í³¼Æ½øÈ¥
     #     if str(cell1.date())=='2021-09-28':
     #         v = [cell2, cell3, cell4]
     #         data_list1.append(v)
@@ -782,18 +782,18 @@ def jjj():
             stock[2] = float(stock[2])
             code = stock[0]
             data_list = get_K.getKline(str(day), str(day + datetime.timedelta(15)), code)
-            open_price = float(data_list[1][2])#Tæ—¥å¼€ç›˜ä»·
-            pre_close_price = float(data_list[1][6])#T-1æ—¥æ”¶ç›˜ä»·
-            may_syl = str((open_price - pre_close_price) / pre_close_price * 100)[0:5]  # Tæ—¥ä½å¼€æˆ–è€…é«˜å¼€
+            open_price = float(data_list[1][2])#TÈÕ¿ªÅÌ¼Û
+            pre_close_price = float(data_list[1][6])#T-1ÈÕÊÕÅÌ¼Û
+            may_syl = str((open_price - pre_close_price) / pre_close_price * 100)[0:5]  # TÈÕµÍ¿ª»òÕß¸ß¿ª
             stock.append(float(may_syl))
             # stock.append(open_price)
             # stock.append(pre_close_price)
-        jyl_list=sorted(v,key=lambda x:x[1],reverse=True)#æ ¹æ®äº¤æ˜“é‡é™åº
+        jyl_list=sorted(v,key=lambda x:x[1],reverse=True)#¸ù¾İ½»Ò×Á¿½µĞò
         i=0
         for jyl in jyl_list:
             if jyl[3]>=0:i+=1
-        # å¦‚æœå¼€ç›˜çš„æ—¶å€™ï¼Œäº¤æ˜“é‡æœ€å¤§çš„æ²¡æœ‰ç»¿ï¼Œå…¶ä»–ä¹Ÿæ²¡æœ‰ç»¿ï¼Œé€‰æ‹©äº¤æ˜“é‡æœ€å¤§çš„*0.9985
-        if len(jyl_list)==i:#æ‰€æœ‰éƒ½æ²¡æœ‰ç»¿
+        # Èç¹û¿ªÅÌµÄÊ±ºò£¬½»Ò×Á¿×î´óµÄÃ»ÓĞÂÌ£¬ÆäËûÒ²Ã»ÓĞÂÌ£¬Ñ¡Ôñ½»Ò×Á¿×î´óµÄ*0.9985
+        if len(jyl_list)==i:#ËùÓĞ¶¼Ã»ÓĞÂÌ
             code1=jyl_list[0][0]
             data_list2 = get_K.getKline(str(day), str(day + datetime.timedelta(15)), code1)
             sell_day=data_list2[2][0]
@@ -803,18 +803,18 @@ def jjj():
                 buy_price = float(data_list2[1][6])*0.985
 
             else:continue
-        #å¦‚æœå¼€ç›˜çš„æ—¶å€™ï¼Œäº¤æ˜“é‡æœ€å¤§çš„æ²¡æœ‰ç»¿ï¼Œå…¶ä»–çš„æœ‰ç»¿çš„ï¼Œ1ã€é€‰æ‹©æœ€ç»¿çš„å¼€ç›˜ä»· 2ã€æŒ‚å•äº¤æ˜“é‡æœ€å¤§çš„*0.9985(ä¸ç®¡ä¹°ä¸ä¹°çš„è¿›å»)
+        #Èç¹û¿ªÅÌµÄÊ±ºò£¬½»Ò×Á¿×î´óµÄÃ»ÓĞÂÌ£¬ÆäËûµÄÓĞÂÌµÄ£¬1¡¢Ñ¡Ôñ×îÂÌµÄ¿ªÅÌ¼Û 2¡¢¹Òµ¥½»Ò×Á¿×î´óµÄ*0.9985(²»¹ÜÂò²»ÂòµÄ½øÈ¥)
         elif jyl_list[0][3]>=0 and len(jyl_list)!=i:
-            #é€‰æ‹©æœ€ç»¿çš„å¼€ç›˜ä»·
+            #Ñ¡Ôñ×îÂÌµÄ¿ªÅÌ¼Û
             # del jyl_list[0]
-            # may_syl_list = sorted(jyl_list, key=lambda x: x[2], reverse=False)  # æ ¹æ®å¼€ç›˜å¹…åº¦å‡åº
+            # may_syl_list = sorted(jyl_list, key=lambda x: x[2], reverse=False)  # ¸ù¾İ¿ªÅÌ·ù¶ÈÉıĞò
             # code1=may_syl_list[0][0]
             # data_list2 = get_K.getKline(str(day), str(day + datetime.timedelta(15)),code1)
             # buy_price=float(data_list2[1][2])
             # sell_day=data_list2[2][0]
             # data_list3 = get_K.testgetKline(sell_day, sell_day, may_syl_list[0][0], '5')
             # sell_price=float(data_list3[29][3])
-            #æŒ‚å•äº¤æ˜“é‡æœ€å¤§çš„*0.9985
+            #¹Òµ¥½»Ò×Á¿×î´óµÄ*0.9985
             code1 = jyl_list[0][0]
             data_list2 = get_K.getKline(str(day), str(day + datetime.timedelta(15)),code1)
             sell_day=data_list2[2][0]
@@ -824,7 +824,7 @@ def jjj():
             if float(data_list2[1][4]) <= float(data_list2[1][6])*0.985 < float(data_list2[1][3]):
                 buy_price = float(data_list2[1][6])*0.985
             else:continue
-        #å¦‚æœå¼€ç›˜çš„æ—¶å€™ï¼Œäº¤æ˜“é‡æœ€å¤§çš„ç»¿äº†ï¼Œåˆ™é€‰æ‹©äº¤æ˜“é‡æœ€å¤§çš„å¼€ç›˜ä»·
+        #Èç¹û¿ªÅÌµÄÊ±ºò£¬½»Ò×Á¿×î´óµÄÂÌÁË£¬ÔòÑ¡Ôñ½»Ò×Á¿×î´óµÄ¿ªÅÌ¼Û
         if jyl_list[0][3]<0:
             code1 = jyl_list[0][0]
             data_list2 = get_K.getKline(str(day), str(day + datetime.timedelta(15)), code1)
@@ -853,8 +853,8 @@ def suanfa2():
         day = datetime.datetime.strptime(k, "%Y-%m-%d").date()
         data_list = get_K.getKline(str(day), str(day + datetime.timedelta(15)), code)
 
-        sell_day = data_list[2][0]  # å–çš„æ—¥æœŸ
-        # 5åˆ†é’Ÿä¸ºå•ä½çš„Kçº¿
+        sell_day = data_list[2][0]  # ÂôµÄÈÕÆÚ
+        # 5·ÖÖÓÎªµ¥Î»µÄKÏß
         data_list3 = get_K.testgetKline(sell_day, sell_day, code, '5')
         if data_list3 == []: continue
         high_price = []
@@ -863,7 +863,7 @@ def suanfa2():
             high_price.append(float(xxx[4]))
         high_price = high_price[0:4]
         if float(data_list[1][2]) < float(data_list[1][6]):buy_price = float(data_list[1][2])
-        elif float(data_list[1][4])<=float(data_list[1][6])*0.984<float(data_list[1][3]):buy_price=float(data_list[1][6])*0.984 # ä¹°ä»·ï¼ŒTæ—¥å¼€ç›˜ä»·
+        elif float(data_list[1][4])<=float(data_list[1][6])*0.984<float(data_list[1][3]):buy_price=float(data_list[1][6])*0.984 # Âò¼Û£¬TÈÕ¿ªÅÌ¼Û
         else:continue
         highest_price = max(high_price)
         syl = (highest_price - float(data_list[1][5])) / float(data_list[1][5])
@@ -879,11 +879,11 @@ def suanfa2():
         print(money, sum, code, day, buy_price, sell_price)
 # suanfa2()
 
-#å°è¯•ç”¨é¾™è™æ¦œæœ€å¤§äº¤æ˜“é¢
+#³¢ÊÔÓÃÁú»¢°ñ×î´ó½»Ò×¶î
 def suanfa3():
     workbook = openpyxl.load_workbook('C:\\Users\Administrator\Desktop\\aa.xlsx')
     sheet = workbook['Sheet1']
-    # è¯»å–æŒ‡å®šçš„å•å…ƒæ ¼æ•°æ®
+    # ¶ÁÈ¡Ö¸¶¨µÄµ¥Ôª¸ñÊı¾İ
     data_dic={}
     for index in range(1,113):
         cell1 = sheet.cell(row=index, column=1).value
@@ -897,8 +897,8 @@ def suanfa3():
         code=v
         data_list = get_K.getKline(str(day), str(day + datetime.timedelta(15)), code)
 
-        sell_day = data_list[2][0]  # å–çš„æ—¥æœŸ
-        # 5åˆ†é’Ÿä¸ºå•ä½çš„Kçº¿
+        sell_day = data_list[2][0]  # ÂôµÄÈÕÆÚ
+        # 5·ÖÖÓÎªµ¥Î»µÄKÏß
         data_list3 = get_K.testgetKline(sell_day, sell_day, code, '5')
         if data_list3 == []: continue
         high_price = []
@@ -907,7 +907,7 @@ def suanfa3():
             high_price.append(float(xxx[4]))
         high_price = high_price[0:4]
         if float(data_list[1][2]) < float(data_list[1][6]):buy_price = float(data_list[1][2])
-        elif float(data_list[1][4]) <= float(data_list[1][6]) * 0.984< float(data_list[1][3]):buy_price = float(data_list[1][6]) * 0.984 # ä¹°ä»·ï¼ŒTæ—¥å¼€ç›˜ä»·
+        elif float(data_list[1][4]) <= float(data_list[1][6]) * 0.984< float(data_list[1][3]):buy_price = float(data_list[1][6]) * 0.984 # Âò¼Û£¬TÈÕ¿ªÅÌ¼Û
         else:continue
         highest_price = max(high_price)
         syl = (highest_price - float(data_list[1][5])) / float(data_list[1][5])

@@ -57,8 +57,9 @@ def syl_ruku():
         sell_day = data_list[2][0]  # 卖的日期
 
         data_list3 = get_K.testgetKline(sell_day, sell_day, code, '5')
-        sell_price=float(data_list3[29][3])
         if data_list3 == []: continue
+        sell_price=float(data_list3[29][3])
+
         if float(data_list[1][2]) < float(data_list[1][6]):
             buy_price = float(data_list[1][2])
         elif float(data_list[1][4]) <= float(data_list[1][6]) < float(data_list[1][3]):  # 今日最低<上一日收盘价<今日最高
