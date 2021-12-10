@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25de81b3-4fb6-4ab8-85de-fb8e52c3da6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guji_test/apiMain.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../Guji_test/apiMain.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guji_test/logs/API_Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Guji_test/logs/API_Test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guji_test/testcase/rewriteHtml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Guji_test/testcase/rewriteHtml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aboutStock.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aboutStock.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/aa.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crontab/everyDay_syl.py" beforeDir="false" afterPath="$PROJECT_DIR$/crontab/everyDay_syl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/everyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/everyTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gp相关.xls" beforeDir="false" afterPath="$PROJECT_DIR$/gp相关.xls" afterDir="false" />
     </list>
@@ -19,10 +25,49 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/everyTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1413">
-              <caret line="211" column="14" lean-forward="true" selection-start-line="211" selection-start-column="14" selection-end-line="211" selection-end-column="14" />
+            <state relative-caret-position="287">
+              <caret line="494" column="47" selection-start-line="494" selection-start-column="37" selection-end-line="494" selection-end-column="47" />
               <folding>
-                <element signature="e#9269#12405#0" />
+                <element signature="e#95#107#0" />
+                <element signature="e#3657#5269#0" />
+                <element signature="e#5271#5292#0" />
+                <element signature="e#10403#11471#0" />
+                <element signature="e#16368#16418#0" />
+                <element signature="e#16780#16859#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../riyu_learn/riyu_50.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+              <folding>
+                <element signature="e#2172#3767#0" />
+                <element signature="e#3784#4067#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../riyu_learn/riyu_practice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,19 +76,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crontab/everyDay_syl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            <state relative-caret-position="603">
+              <caret line="69" column="65" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
+              <folding>
+                <element signature="e#117#1729#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>download_data_first</find>
       <find>selectBS</find>
       <find>t_stock</find>
+      <find>USER-LOGIN</find>
+      <find>11111111</find>
+      <find>烟花</find>
+      <find>祭</find>
+      <find>星辰</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,26 +130,24 @@
         <option value="$PROJECT_DIR$/aboutFlask/gupiao.py" />
         <option value="$PROJECT_DIR$/aboutFlask/test.py" />
         <option value="$PROJECT_DIR$/crontab/everyDay_syl.py" />
+        <option value="$PROJECT_DIR$/../riyu_learn/riyu_50.py" />
+        <option value="$PROJECT_DIR$/../riyu_learn/riyu_practice.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/../py_requests/hjMLQ_gailv.py" />
+        <option value="$PROJECT_DIR$/../py_requests/MLQ_gailv.py" />
         <option value="$PROJECT_DIR$/everyTest.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/aboutStock.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1040" />
-    <option name="height" value="735" />
+    <option name="width" value="1555" />
+    <option name="height" value="850" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -104,8 +162,11 @@
             </path>
             <path>
               <item name="aboutStock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aboutStock" type="462c0819:PsiDirectoryNode" />
-              <item name="crontab" type="462c0819:PsiDirectoryNode" />
+              <item name="py_requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aboutStock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -117,7 +178,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../py_requests" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -133,7 +194,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.everyTest">
+    <configuration name="MLQ_gailv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py_requests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../py_requests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\projects\py_requests\phone_yzm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="everyTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aboutStock" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,9 +239,79 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="get_xb_family" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py_requests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../py_requests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../py_requests/get_xb_family.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hjMLQ_gailv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py_requests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../py_requests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../py_requests/hjMLQ_gailv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aboutStock" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.everyTest" />
+        <item itemvalue="Python.MLQ_gailv" />
+        <item itemvalue="Python.hjMLQ_gailv" />
+        <item itemvalue="Python.get_xb_family" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -174,23 +327,48 @@
       <updated>1636454044666</updated>
       <workItem from="1636454045927" duration="997000" />
       <workItem from="1636507106913" duration="12062000" />
-      <workItem from="1636593348479" duration="5208000" />
+      <workItem from="1636593348479" duration="6412000" />
+      <workItem from="1636679692333" duration="8716000" />
+      <workItem from="1636939226942" duration="8979000" />
+      <workItem from="1636970612815" duration="608000" />
+      <workItem from="1637025076961" duration="1342000" />
+      <workItem from="1637043282509" duration="147000" />
+      <workItem from="1637043458397" duration="5733000" />
+      <workItem from="1637052979310" duration="1399000" />
+      <workItem from="1637111633903" duration="15744000" />
+      <workItem from="1637198653681" duration="13265000" />
+      <workItem from="1637284458547" duration="7081000" />
+      <workItem from="1637544060851" duration="14567000" />
+      <workItem from="1637629954022" duration="7708000" />
+      <workItem from="1637716737415" duration="24086000" />
+      <workItem from="1637802989913" duration="15436000" />
+      <workItem from="1637889937821" duration="16601000" />
+      <workItem from="1638150081124" duration="4656000" />
+      <workItem from="1638234929638" duration="7272000" />
+      <workItem from="1638322098083" duration="6410000" />
+      <workItem from="1638407676882" duration="8667000" />
+      <workItem from="1638494576854" duration="2594000" />
+      <workItem from="1638753054091" duration="2034000" />
+      <workItem from="1638839782267" duration="2745000" />
+      <workItem from="1638926211790" duration="5407000" />
+      <workItem from="1639012925950" duration="5295000" />
+      <workItem from="1639099548836" duration="7814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18267000" />
+    <option name="totallyTimeSpent" value="213777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.24262735" />
+      <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.20241287" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30169973" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -198,7 +376,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -211,7 +389,13 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/aboutStock$everyTest.coverage" NAME="everyTest Coverage Results" MODIFIED="1636593637402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aboutStock$hjMLQ_gailv.coverage" NAME="hjMLQ_gailv Coverage Results" MODIFIED="1638424387919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py_requests" />
+    <SUITE FILE_PATH="coverage/aboutStock$all_test.coverage" NAME="all_test Coverage Results" MODIFIED="1637219141030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Guji_test" />
+    <SUITE FILE_PATH="coverage/aboutStock$MLQ_gailv.coverage" NAME="MLQ_gailv Coverage Results" MODIFIED="1639044946766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py_requests" />
+    <SUITE FILE_PATH="coverage/aboutStock$test.coverage" NAME="test Coverage Results" MODIFIED="1637823083710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aboutStock$get_xb_family.coverage" NAME="get_xb_family Coverage Results" MODIFIED="1638417392788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py_requests" />
+    <SUITE FILE_PATH="coverage/aboutStock$everyTest.coverage" NAME="everyTest Coverage Results" MODIFIED="1639130667559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aboutStock$riyu_practice.coverage" NAME="riyu_practice Coverage Results" MODIFIED="1637568648916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../riyu_learn" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/crontab/everyDay_beishang.py">
@@ -431,19 +615,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1229051315/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="3704" column="8" selection-start-line="3704" selection-start-column="8" selection-end-line="3704" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/workspace/xshell7/nslicense.dll" />
+    <entry file="file://$PROJECT_DIR$/../Guji_test/apiMain.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Guji_test/testcase/DZ_testMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Guji_test/logs/API_Test.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="280">
+          <caret line="370" column="65" lean-forward="true" selection-start-line="370" selection-start-column="65" selection-end-line="370" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="773" column="6" selection-start-line="773" selection-start-column="6" selection-end-line="773" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test" />
+    <entry file="file://$PROJECT_DIR$/../py_requests/get_xb_family.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../py_requests/phone_yzm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../py_requests/zsMLQ_gailv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../py_requests/hjMLQ_gailv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="71" column="44" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#78#208#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../riyu_learn/riyu_50.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#2172#3767#0" />
+            <element signature="e#3784#4067#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../riyu_learn/riyu_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crontab/everyDay_syl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        <state relative-caret-position="603">
+          <caret line="69" column="65" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
+          <folding>
+            <element signature="e#117#1729#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/everyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1413">
-          <caret line="211" column="14" lean-forward="true" selection-start-line="211" selection-start-column="14" selection-end-line="211" selection-end-column="14" />
+        <state relative-caret-position="287">
+          <caret line="494" column="47" selection-start-line="494" selection-start-column="37" selection-end-line="494" selection-end-column="47" />
           <folding>
-            <element signature="e#9269#12405#0" />
+            <element signature="e#95#107#0" />
+            <element signature="e#3657#5269#0" />
+            <element signature="e#5271#5292#0" />
+            <element signature="e#10403#11471#0" />
+            <element signature="e#16368#16418#0" />
+            <element signature="e#16780#16859#0" />
           </folding>
         </state>
       </provider>

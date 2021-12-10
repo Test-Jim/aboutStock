@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Guji_test/.idea/Guji_test.iml" filepath="$PROJECT_DIR$/../Guji_test/.idea/Guji_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/aboutStock.iml" filepath="$PROJECT_DIR$/.idea/aboutStock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../py_requests/.idea/py_requests.iml" filepath="$PROJECT_DIR$/../py_requests/.idea/py_requests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../riyu_learn/.idea/riyu_learn.iml" filepath="$PROJECT_DIR$/../riyu_learn/.idea/riyu_learn.iml" />
     </modules>
   </component>
 </project>
