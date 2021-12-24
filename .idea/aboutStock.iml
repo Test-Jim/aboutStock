@@ -9,6 +9,7 @@
     <orderEntry type="module" module-name="riyu_learn" />
     <orderEntry type="module" module-name="Guji_test" />
     <orderEntry type="module" module-name="py_requests" />
+    <orderEntry type="module" module-name="TestMota2" />
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="pytest" />

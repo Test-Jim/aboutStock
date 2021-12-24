@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25de81b3-4fb6-4ab8-85de-fb8e52c3da6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Guji_test/apiMain.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../Guji_test/apiMain.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Guji_test/logs/API_Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Guji_test/logs/API_Test.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Guji_test/testcase/rewriteHtml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Guji_test/testcase/rewriteHtml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/aboutStock.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aboutStock.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/everyTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/everyTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gp相关.xls" beforeDir="false" afterPath="$PROJECT_DIR$/gp相关.xls" afterDir="false" />
     </list>
@@ -22,64 +19,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../py_requests/phone_yzm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/everyTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="494" column="47" selection-start-line="494" selection-start-column="37" selection-end-line="494" selection-end-column="47" />
+            <state relative-caret-position="228">
+              <caret line="492" column="20" lean-forward="true" selection-start-line="492" selection-start-column="20" selection-end-line="492" selection-end-column="20" />
               <folding>
                 <element signature="e#95#107#0" />
                 <element signature="e#3657#5269#0" />
                 <element signature="e#5271#5292#0" />
-                <element signature="e#10403#11471#0" />
-                <element signature="e#16368#16418#0" />
-                <element signature="e#16780#16859#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../riyu_learn/riyu_50.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-              <folding>
-                <element signature="e#2172#3767#0" />
-                <element signature="e#3784#4067#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../riyu_learn/riyu_practice.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crontab/everyDay_syl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="69" column="65" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
-              <folding>
-                <element signature="e#117#1729#0" />
+                <element signature="e#7722#9978#0" />
               </folding>
             </state>
           </provider>
@@ -104,6 +62,7 @@
       <find>烟花</find>
       <find>祭</find>
       <find>星辰</find>
+      <find>syl2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,13 +95,13 @@
         <option value="$PROJECT_DIR$/../py_requests/hjMLQ_gailv.py" />
         <option value="$PROJECT_DIR$/../py_requests/MLQ_gailv.py" />
         <option value="$PROJECT_DIR$/everyTest.py" />
+        <option value="$PROJECT_DIR$/../py_requests/phone_yzm.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1555" />
+    <option name="width" value="1300" />
     <option name="height" value="850" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -178,9 +137,10 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../py_requests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-idle-game-master/vue-idle-game-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -194,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.everyTest">
+  <component name="RunManager" selected="Python.phone_yzm">
     <configuration name="MLQ_gailv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py_requests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -239,28 +199,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_xb_family" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py_requests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../py_requests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../py_requests/get_xb_family.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="hjMLQ_gailv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py_requests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -283,20 +221,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="aboutStock" />
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TestMota2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phone_yzm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py_requests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../py_requests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../py_requests/phone_yzm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -307,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.phone_yzm" />
         <item itemvalue="Python.everyTest" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.MLQ_gailv" />
         <item itemvalue="Python.hjMLQ_gailv" />
-        <item itemvalue="Python.get_xb_family" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -352,22 +312,36 @@
       <workItem from="1638839782267" duration="2745000" />
       <workItem from="1638926211790" duration="5407000" />
       <workItem from="1639012925950" duration="5295000" />
-      <workItem from="1639099548836" duration="7814000" />
+      <workItem from="1639099548836" duration="8459000" />
+      <workItem from="1639358286909" duration="610000" />
+      <workItem from="1639360724882" duration="7508000" />
+      <workItem from="1639444812770" duration="4492000" />
+      <workItem from="1639531280678" duration="3820000" />
+      <workItem from="1639617309070" duration="2408000" />
+      <workItem from="1639640325647" duration="6298000" />
+      <workItem from="1639649041018" duration="1419000" />
+      <workItem from="1639703469488" duration="2161000" />
+      <workItem from="1639962806219" duration="20417000" />
+      <workItem from="1640049276666" duration="8354000" />
+      <workItem from="1640137547582" duration="7711000" />
+      <workItem from="1640221983280" duration="5068000" />
+      <workItem from="1640308250796" duration="840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213777000" />
+    <option name="totallyTimeSpent" value="285528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.24262735" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.288874" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.20241287" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30169973" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.305949" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,12 +364,14 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/aboutStock$hjMLQ_gailv.coverage" NAME="hjMLQ_gailv Coverage Results" MODIFIED="1638424387919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py_requests" />
+    <SUITE FILE_PATH="coverage/aboutStock$phone_yzm.coverage" NAME="phone_yzm Coverage Results" MODIFIED="1640243783683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py_requests" />
     <SUITE FILE_PATH="coverage/aboutStock$all_test.coverage" NAME="all_test Coverage Results" MODIFIED="1637219141030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Guji_test" />
     <SUITE FILE_PATH="coverage/aboutStock$MLQ_gailv.coverage" NAME="MLQ_gailv Coverage Results" MODIFIED="1639044946766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py_requests" />
     <SUITE FILE_PATH="coverage/aboutStock$test.coverage" NAME="test Coverage Results" MODIFIED="1637823083710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aboutStock$get_xb_family.coverage" NAME="get_xb_family Coverage Results" MODIFIED="1638417392788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py_requests" />
-    <SUITE FILE_PATH="coverage/aboutStock$everyTest.coverage" NAME="everyTest Coverage Results" MODIFIED="1639130667559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aboutStock$everyTest.coverage" NAME="everyTest Coverage Results" MODIFIED="1640074078845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aboutStock$riyu_practice.coverage" NAME="riyu_practice Coverage Results" MODIFIED="1637568648916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../riyu_learn" />
+    <SUITE FILE_PATH="coverage/aboutStock$main.coverage" NAME="main Coverage Results" MODIFIED="1639642427944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/crontab/everyDay_beishang.py">
@@ -665,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../py_requests/phone_yzm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../py_requests/zsMLQ_gailv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -715,7 +684,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crontab/everyDay_syl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
+        <state relative-caret-position="800">
           <caret line="69" column="65" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
           <folding>
             <element signature="e#117#1729#0" />
@@ -730,17 +699,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pygame/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/source/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12097">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/source/com/creature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+          <folding>
+            <element signature="e#382#458#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/source/shower.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="346" column="26" lean-forward="true" selection-start-line="346" selection-start-column="26" selection-end-line="346" selection-end-column="26" />
+          <folding>
+            <element signature="e#7736#8028#0" />
+            <element signature="e#8085#8573#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/source/control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5773">
+          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <element signature="e#337#787#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/source/com/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/source/com/hero.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-794">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#364#533#0" />
+            <element signature="e#602#1205#0" />
+            <element signature="e#1271#1585#0" />
+            <element signature="e#1661#2068#0" />
+            <element signature="e#2111#3021#0" />
+            <element signature="e#3076#3443#0" />
+            <element signature="e#3512#3916#0" />
+            <element signature="e#3966#4092#0" />
+            <element signature="e#5451#5530#0" />
+            <element signature="e#5566#5834#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/source/com/map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MagicTower_Python-master/MagicTower_Python-master/source/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#11#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../py_requests/phone_yzm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/everyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="494" column="47" selection-start-line="494" selection-start-column="37" selection-end-line="494" selection-end-column="47" />
+        <state relative-caret-position="228">
+          <caret line="492" column="20" lean-forward="true" selection-start-line="492" selection-start-column="20" selection-end-line="492" selection-end-column="20" />
           <folding>
             <element signature="e#95#107#0" />
             <element signature="e#3657#5269#0" />
             <element signature="e#5271#5292#0" />
-            <element signature="e#10403#11471#0" />
-            <element signature="e#16368#16418#0" />
-            <element signature="e#16780#16859#0" />
+            <element signature="e#7722#9978#0" />
           </folding>
         </state>
       </provider>
